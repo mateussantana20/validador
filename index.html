@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="screen">
+    <div class="leftside">
+      <img src="src/img/undraw_verified_re_4io7.png" alt="">
+    </div>
+
+    <div class="rightside">
+      <h1>Crie uma conta</h1>
+      <form method="POST" action="cadastro.php" class="validator">
+
+        <label for="">
+          <p>Seu nome</p>
+          <input type="text" name="name" data-rules="required|min=2">
+        </label>
+
+        <label for="">
+          <p>Seu Email</p>
+          <input type="email" name="email" data-rules="required">
+        </label>
+
+        <label for="">
+          <p>Sua senha</p>
+          <input type="password" name="password" data-rules="required|min=8">
+        </label>
+
+        <label for="">
+          <button type="submit">Cadastrar</button>
+        </label>
+
+      </form>
+
+      <div>
+        Já tem uma conta?
+        <a href="">Faça o login</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
+</html>
